@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Button, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import Navbar from "@/components/Navbar";
 import NormalText from "@/components/NormalText";
+import NormalButtons from "@/components/NormalButtons";
 
 const Semester4 = ({navigation}: any) => {
     return (
@@ -9,7 +10,8 @@ const Semester4 = ({navigation}: any) => {
             <Navbar navigation={navigation} />
             <View style={styles.overAllContainer}>
                 <NormalText text={"Semester 4"} fontSize={24} fontWeight={'bold'}/>
-                <Button title="Go to Semester 4" onPress={() => navigation.navigate('OOP')} />
+                <NormalButtons text={'OOP'} height={80} width={80} onPress={() => navigation.navigate('OOP')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} />
             </View>
 
         </View>

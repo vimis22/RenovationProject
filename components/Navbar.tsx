@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, StatusBar, SafeAreaView, Platform, Image } from 'react-native';
+import {View, StyleSheet, StatusBar, SafeAreaView, Platform, Image, TouchableOpacity} from 'react-native';
 import NormalButtons from '@/components/NormalButtons';
 
 type Props = { navigation: any };
@@ -16,11 +16,13 @@ const Navbar: React.FC<Props> = ({ navigation }) => {
 
                     {/* Logo i samme højde som knapperne */}
                     <View style={styles.imageContainer}>
-                        <Image
-                            source={require('@/assets/vimis22.png')}
-                            style={styles.image}
-                            resizeMode="contain"
-                        />
+                        <TouchableOpacity onPress={() => navigation.navigate('HomeScreen')}>
+                            <Image
+                                source={require('@/assets/vimis22.png')}
+                                style={[styles.image, {height: BUTTON_HEIGHT, width: LOGO_WIDTH}]}
+                                resizeMode="contain"
+                            />
+                        </TouchableOpacity>
                     </View>
 
                     {/* Knapper */}
