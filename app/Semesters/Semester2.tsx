@@ -11,7 +11,9 @@ const Semester2 = ({navigation}: any) => {
             <View style={styles.overAllContainer}>
                 <NormalText text={"Semester 2"} fontSize={24} fontWeight={'bold'}/>
                 <NormalButtons text={'DMA'} height={80} width={80} onPress={() => navigation.navigate('DMA')}
-                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} />
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'VOP'} height={80} width={80} onPress={() => navigation.navigate('VOP')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
             </View>
 
         </View>

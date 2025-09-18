@@ -10,8 +10,14 @@ const Semester5 = ({navigation}: any) => {
             <Navbar navigation={navigation} />
             <View style={styles.overAllContainer}>
                 <NormalText text={"Semester 5"} fontSize={24} fontWeight={'bold'}/>
-                <NormalButtons text={'OOP'} height={80} width={80} onPress={() => navigation.navigate('OOP')}
+                <NormalButtons text={'HCSD'} height={80} width={80} onPress={() => navigation.navigate('HCSD')}
                                borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} />
+                <NormalButtons text={'ICPS'} height={80} width={80} onPress={() => navigation.navigate('ICPS')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'MAI'} height={80} width={80} onPress={() => navigation.navigate('MAI')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'CS'} height={80} width={80} onPress={() => navigation.navigate('CS')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
             </View>
 
         </View>
