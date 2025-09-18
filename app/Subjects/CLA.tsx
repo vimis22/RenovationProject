@@ -3,6 +3,7 @@ import ScrollView = Animated.ScrollView;
 import {Animated, StyleSheet, View} from "react-native";
 import Navbar from "@/components/Navbar";
 import NormalText from "@/components/NormalText";
+import NormalButtons from "@/components/NormalButtons";
 
 const CLA = ({navigation}: any) => {
     return (
@@ -10,7 +11,30 @@ const CLA = ({navigation}: any) => {
             <Navbar navigation={navigation} />
             <View style={styles.container}>
                 <NormalText text={"Calculus & Linear Algebra (Mathematics 1)"} fontSize={24} fontWeight={'bold'}/>
-                {/* Paste here the Lectures. */}
+                <NormalButtons text={'Lecture 1'} height={80} width={180} onPress={() => navigation.navigate('CLA')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} />
+                <NormalButtons text={'Lecture 2'} height={80} width={180} onPress={() => navigation.navigate('CLA')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'Lecture 3'} height={80} width={180} onPress={() => navigation.navigate('CLA')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'Lecture 4'} height={80} width={180} onPress={() => navigation.navigate('CLA')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'Lecture 5'} height={80} width={180} onPress={() => navigation.navigate('CLA')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'Lecture 6'} height={80} width={180} onPress={() => navigation.navigate('CLA')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'Lecture 7'} height={80} width={180} onPress={() => navigation.navigate('CLA')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'Lecture 8'} height={80} width={180} onPress={() => navigation.navigate('CLA')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'Lecture 9'} height={80} width={180} onPress={() => navigation.navigate('CLA')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'Lecture 10'} height={80} width={180} onPress={() => navigation.navigate('CLA')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'Lecture 11'} height={80} width={180} onPress={() => navigation.navigate('CLA')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
+                <NormalButtons text={'Lecture 12'} height={80} width={180} onPress={() => navigation.navigate('CLA')}
+                               borderRadius={10} borderColor={'#ccc'} backgroundColor={'#000000'} textColor={'#ffffff'} fontSize={16} marginTop={10}/>
             </View>
         </ScrollView>
     )
