@@ -15,6 +15,10 @@ interface NormalButtonsProps {
     onPress: () => void;
     style?: any;
     visible?: boolean;
+    marginTop?: any;
+    marginBottom?: any;
+    marginLeft?: any;
+    marginRight?: any;
 }
 
 const NormalButtons = (props: NormalButtonsProps) => {
@@ -33,6 +37,10 @@ const NormalButtons = (props: NormalButtonsProps) => {
                 borderRadius: props.borderRadius,
                 justifyContent: 'center',
                 alignItems: 'center',
+                marginTop: props.marginTop,
+                marginBottom: props.marginBottom,
+                marginLeft: props.marginLeft,
+                marginRight: props.marginRight,
             }, props.style]}
             onPress={props.onPress}
         >
