@@ -9,7 +9,7 @@ import Semester4 from "@/app/Semesters/Semester4";
 import Semester5 from "@/app/Semesters/Semester5";
 import Semester6 from "@/app/Semesters/Semester6";
 import HomeScreen from "@/app/Semesters/HomeScreen";
-import Subjects from "@/app/Subjects/Subjects";
+import Subjects from "@/app/Subjects";
 
 export default function App(){
     const Stack = createNativeStackNavigator();
